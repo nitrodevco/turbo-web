@@ -11,6 +11,9 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router';
 
 import { App } from './App';
+import { stopPhoneZoom } from './lib/noZoom';
+
+stopPhoneZoom();
 
 const queryClient = new QueryClient({
     defaultOptions: { queries: { retry: 1, refetchOnWindowFocus: true } },
